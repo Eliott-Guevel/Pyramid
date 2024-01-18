@@ -6,11 +6,11 @@ Class {
 	#category : #'Pyramid-Toplo'
 }
 
-{ #category : #'as yet unclassified' }
-PyramidToploTreePlugin class >> extendPlugins [
-	"Put in a collection all linked plugins."
+{ #category : #'meta-data' }
+PyramidToploTreePlugin class >> dependencies [
+	"Put symbol as the class name for each dependencies."
 
-	^ { PyramidTreePlugin  }
+	^ { #PyramidToploCommandPlugin . #PyramidTreePlugin }
 ]
 
 { #category : #actions }
