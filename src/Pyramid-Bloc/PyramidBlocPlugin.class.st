@@ -260,12 +260,16 @@ PyramidBlocPlugin class >> position [
 	| property |
 	property := PyramidProperty new
 		            name: 'Position';
-		            command: PyramidPositionCommand new;
+		            command: (PyramidValueCommand new
+				             validationBlock: self validationBlockForBlElement;
+				             writer: [ :obj :arg | obj constraints position: arg ];
+				             reader: [ :obj | obj constraints position ];
+				             yourself);
 		            pyramidInputPresenterClass: PyramidPointInputPresenter;
 		            yourself.
 	property pyramidInputPresenterStrings help:
 		'Set the position x and y of the element inside his parent.'.
-	^ property
+	^ property.
 ]
 
 { #category : #'as yet unclassified' }
@@ -315,36 +319,44 @@ PyramidBlocPlugin >> addPanelsOn: aPyramidSimpleWindow [
 { #category : #connecting }
 PyramidBlocPlugin >> connectOn: aPyramidEditor [
 
+	| groupProperties groupLayout |
 	self editor: aPyramidEditor.
+
+	groupProperties := aPyramidEditor propertiesManager atGroup:
+		                   #Properties.
+	groupLayout := aPyramidEditor propertiesManager atGroup: #Layout.
+
 	aPyramidEditor propertiesManager addProperty: self class elementId.
 	aPyramidEditor propertiesManager addProperty: self class visibility.
 	aPyramidEditor propertiesManager addProperty: self class zIndex.
-	aPyramidEditor propertiesManager addProperty: self class clipChildren.
-	aPyramidEditor propertiesManager addProperty: self class geometry.
-	aPyramidEditor propertiesManager addProperty: self class cornerRadii.
-	aPyramidEditor propertiesManager addProperty: self class position.
-	
-	aPyramidEditor propertiesManager addProperty: self class layout.
-	aPyramidEditor propertiesManager addProperty: self class flowLayoutOrientation.
+
+	groupProperties addProperty: self class elementId.
+	groupProperties addProperty: self class visibility.
+	groupProperties addProperty: self class zIndex.
+	groupProperties addProperty: self class clipChildren.
+	groupProperties addProperty: self class geometry.
+	groupProperties addProperty: self class cornerRadii.
+	groupProperties addProperty: self class position.
+	groupProperties addProperty: self class background.
+	groupProperties addProperty: self class padding.
+	groupProperties addProperty: self class margin.
+
+	groupLayout addProperty: self class layout.
+	groupLayout addProperty: self class flowLayoutOrientation.
 
 	"Constraints - horizontal"
-	aPyramidEditor propertiesManager addProperty:
-		self class constraintsPropH.
-	aPyramidEditor propertiesManager addProperty:
-		self class constraintsBasicH.
-	aPyramidEditor propertiesManager addProperty:
-		self class constraintsBasicHExact.
+	groupLayout addProperty: self class constraintsPropH.
+	groupLayout addProperty: self class constraintsBasicH.
+	groupLayout addProperty: self class constraintsBasicHExact.
 
 	"Constraints - vertical"
-	aPyramidEditor propertiesManager addProperty:
-		self class constraintsPropV.
-	aPyramidEditor propertiesManager addProperty:
-		self class constraintsBasicV.
-	aPyramidEditor propertiesManager addProperty:
-		self class constraintsBasicVExact.
-	aPyramidEditor propertiesManager addProperty: self class background.
-	aPyramidEditor propertiesManager addProperty: self class padding.
-	aPyramidEditor propertiesManager addProperty: self class margin
+	groupLayout addProperty: self class constraintsPropV.
+	groupLayout addProperty: self class constraintsBasicV.
+	groupLayout addProperty: self class constraintsBasicVExact.
+	
+	"Margin and padding"
+	groupLayout addProperty: self class padding.
+	groupLayout addProperty: self class margin
 ]
 
 { #category : #accessing }

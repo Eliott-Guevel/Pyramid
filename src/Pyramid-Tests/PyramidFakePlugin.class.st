@@ -1,6 +1,8 @@
 Class {
 	#name : #PyramidFakePlugin,
 	#superclass : #Object,
+	#traits : 'TPyramidPlugin',
+	#classTraits : 'TPyramidPlugin classTrait',
 	#instVars : [
 		'addPanelsOn',
 		'configureBuilder',
@@ -8,6 +10,17 @@ Class {
 	],
 	#category : #'Pyramid-Tests-cases-core'
 }
+
+{ #category : #initialization }
+PyramidFakePlugin class >> initialize [
+
+]
+
+{ #category : #testing }
+PyramidFakePlugin class >> isTestPlugin [
+
+	^ true
+]
 
 { #category : #adding }
 PyramidFakePlugin >> addPanelsOn: aPyramidSimpleWindow [
