@@ -8,7 +8,8 @@ Class {
 	#instVars : [
 		'cluster',
 		'property',
-		'isNilDefault'
+		'isNilDefault',
+		'asArray'
 	],
 	#category : #'Pyramid-property'
 }
@@ -40,13 +41,26 @@ PyramidPropertyPresenterBuilder >> cluster: anObject [
 { #category : #initialization }
 PyramidPropertyPresenterBuilder >> initialize [
 
-isNilDefault := false.
+	isNilDefault := false.
+	asArray := false.
+]
+
+{ #category : #initialization }
+PyramidPropertyPresenterBuilder >> isAsArray [
+
+	^ asArray
 ]
 
 { #category : #initialization }
 PyramidPropertyPresenterBuilder >> isNilDefault [
 
 	^ isNilDefault
+]
+
+{ #category : #initialization }
+PyramidPropertyPresenterBuilder >> makeAsArray [
+
+	asArray := true
 ]
 
 { #category : #initialization }

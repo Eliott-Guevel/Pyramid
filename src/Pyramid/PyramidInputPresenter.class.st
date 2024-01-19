@@ -37,6 +37,14 @@ PyramidInputPresenter >> applyStrings [
 ]
 
 { #category : #'as yet unclassified' }
+PyramidInputPresenter >> asArray [
+
+	^ PyramidArrayInputsPresenter new
+		  inputClass: self class;
+		  yourself
+]
+
+{ #category : #'as yet unclassified' }
 PyramidInputPresenter >> emptyValue [
 
 	self value: PyramidEmptyValue new

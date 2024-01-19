@@ -177,6 +177,7 @@ PyramidPopingPresenterBuilder >> makeNewInput [
 	| presenter |
 	presenter := self property pyramidInputPresenterClass new.
 	self isNilDefault ifTrue: [ presenter := presenter orNil ].
+	self isAsArray ifTrue: [ presenter := presenter asArray ].
 	^ presenter
 		  strings: self property pyramidInputPresenterStrings;
 		  yourself

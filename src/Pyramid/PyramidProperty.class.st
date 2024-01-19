@@ -12,6 +12,12 @@ Class {
 	#category : #'Pyramid-property'
 }
 
+{ #category : #accessing }
+PyramidProperty >> asArray [
+
+	self presenterBuilder makeAsArray
+]
+
 { #category : #'as yet unclassified' }
 PyramidProperty >> buildPresenterFromCluster: aCluster [
 
