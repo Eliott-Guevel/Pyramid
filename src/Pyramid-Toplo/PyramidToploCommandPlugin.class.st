@@ -29,6 +29,13 @@ PyramidToploCommandPlugin class >> changeLabelText [
 	^ property
 ]
 
+{ #category : #'meta-data' }
+PyramidToploCommandPlugin class >> dependencies [
+	"Put symbol as the class name for each dependencies."
+
+	^ { #PyramidBlocPlugin }
+]
+
 { #category : #'as yet unclassified' }
 PyramidToploCommandPlugin class >> validationBlockFor: aClassOrATrait [
 
