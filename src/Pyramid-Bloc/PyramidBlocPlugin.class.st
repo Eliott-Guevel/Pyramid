@@ -374,6 +374,7 @@ PyramidBlocPlugin >> connectOn: aPyramidEditor [
 	aPyramidEditor propertiesManager addProperty: self class visibility.
 	aPyramidEditor propertiesManager addProperty: self class zIndex.
 
+	"Basic properties"
 	groupProperties addProperty: self class elementId.
 	groupProperties addProperty: self class visibility.
 	groupProperties addProperty: self class zIndex.
@@ -387,20 +388,23 @@ PyramidBlocPlugin >> connectOn: aPyramidEditor [
 
 	groupLayout addProperty: self class layout.
 	groupLayout addProperty: self class flowLayoutOrientation.
+	groupLayout addProperty: self class linearLayoutOrientation.
 
 	"Constraints - horizontal"
 	groupLayout addProperty: self class constraintsPropH.
+	groupLayout addProperty: self class constraintsFrameH.
 	groupLayout addProperty: self class constraintsBasicH.
 	groupLayout addProperty: self class constraintsBasicHExact.
 
 	"Constraints - vertical"
 	groupLayout addProperty: self class constraintsPropV.
+	groupLayout addProperty: self class constraintsFrameV.
 	groupLayout addProperty: self class constraintsBasicV.
 	groupLayout addProperty: self class constraintsBasicVExact.
-	
+
 	"Margin and padding"
 	groupLayout addProperty: self class padding.
-	groupLayout addProperty: self class margin
+	groupLayout addProperty: self class margin.
 ]
 
 { #category : #accessing }

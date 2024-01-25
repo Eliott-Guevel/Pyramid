@@ -9,7 +9,7 @@ PyramidToploExamples class >> toplo [
 	"This class has been generated using Pyramid.
 
 	By: YannLEGOFF
-	2024-01-23 13:28:11"
+	2024-01-25 11:32:47"
 
 	<pySTON>
 	^ '[
@@ -23,9 +23,19 @@ PyramidToploExamples class >> toplo [
 								#resizer : BlLayoutFitContentResizer { }
 							},
 							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : BlLayoutFitContentResizer { }
 							},
 							#constraints : {
+								Class [ #BlProportionalLayout ] : BlProportionalLayoutConstraints {
+									#vertical : BlProportionalLayoutConstraintsVertical {
+										#top : 0,
+										#bottom : 0.5
+									},
+									#horizontal : BlProportionalLayoutConstraintsHorizontal {
+										#left : 0.0,
+										#right : 1.0
+									}
+								},
 								Class [ #BlLinearLayout ] : BlLinearLayoutConstraints {
 									#vertical : BlLinearLayoutConstraintsVertical {
 										#alignment : BlTopAlignment { }
@@ -52,17 +62,17 @@ PyramidToploExamples class >> toplo [
 							#minHeight : 0.0,
 							#minWidth : 0.0,
 							#maxHeight : Float [ #infinity ],
-							#maxWidth : @21,
+							#maxWidth : @26,
 							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @13,
-							#previouslyAccessedConstraintsType : @12,
+							#previouslyAccessedConstraints : @14,
+							#previouslyAccessedConstraintsType : @13,
 							#accountTransformation : false
 						},
 						#visuals : BlCustomVisuals {
 							#geometry : BlRoundedRectangleGeometry {
-								#extent : Point [ 112.0, 26.0 ],
+								#extent : Point [ 200, 50 ],
 								#pathCache : BlPathCache {
-									#geometry : @23
+									#geometry : @28
 								},
 								#cornerRadii : BlCornerRadii {
 									#topLeft : 6,
@@ -70,7 +80,7 @@ PyramidToploExamples class >> toplo [
 									#bottomLeft : 6,
 									#bottomRight : 6
 								},
-								#center : Point [ 56.0, 13.0 ]
+								#center : Point [ 100.0, 25.0 ]
 							},
 							#border : BlBorder {
 								#paint : BlColorPaint {
@@ -146,474 +156,14 @@ PyramidToploExamples class >> toplo [
 							}
 						},
 						#userData : IdentityDictionary {
-							#stonLabeledIcon : ToLabeledIcon {
-								#constraints : BlLayoutCommonConstraints {
-									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
-									},
-									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : BlLayoutMatchParentResizer { }
-									},
-									#constraints : {
-										@12 : BlLinearLayoutConstraints {
-											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : @15
-											},
-											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : @17
-											},
-											#weight : 1
-										}
-									},
-									#position : Point [ 0.0, 0.0 ],
-									#margin : @19,
-									#padding : @19,
-									#minHeight : 0.0,
-									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
-									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @51,
-									#previouslyAccessedConstraintsType : @12,
-									#accountTransformation : false
-								},
-								#visuals : BlDefaultVisuals { },
-								#userData : IdentityDictionary {
-									#stonToLabel : ToLabel {
-										#constraints : BlLayoutCommonConstraints {
-											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
-											},
-											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
-											},
-											#constraints : {
-												Class [ #BlFrameLayout ] : BlFrameLayoutConstraints {
-													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @15,
-														#weight : 1.0
-													},
-													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @17,
-														#weight : 1.0
-													}
-												}
-											},
-											#position : Point [ 0.0, 0.0 ],
-											#margin : @19,
-											#padding : @19,
-											#minHeight : 0.0,
-											#minWidth : 0.0,
-											#maxHeight : @21,
-											#maxWidth : @21,
-											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @63,
-											#previouslyAccessedConstraintsType : @62,
-											#accountTransformation : false
-										},
-										#visuals : @55,
-										#userData : IdentityDictionary {
-											#enabled : true,
-											#stonToLabelText : BlRopedText {
-												#rope : BlAttributeRope {
-													#attributes : [
-														BlFontWeightAttribute {
-															#isOverwritableByStyler : true,
-															#weight : 600
-														},
-														BlFontFamilyDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#name : ''SFMono-Regular''
-														},
-														BlFontSizeDefaultAttribute {
-															#isOverwritableByStyler : true,
-															#size : 14
-														},
-														AlbTextParagraphLineSpacingAttribute {
-															#isOverwritableByStyler : true,
-															#lineSpacing : 1.5
-														},
-														BlTextForegroundAttribute {
-															#isOverwritableByStyler : true,
-															#paint : Color [ #black ]
-														}
-													],
-													#rope : BlCollectionRope {
-														#collection : ''Raw Theme''
-													}
-												}
-											}
-										},
-										#layout : BlFrameLayout { }
-									},
-									#stonToImage : ToImage {
-										#constraints : BlLayoutCommonConstraints {
-											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
-											},
-											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
-											},
-											#constraints : {
-												@62 : BlFrameLayoutConstraints {
-													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @15,
-														#weight : 1.0
-													},
-													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @17,
-														#weight : 1.0
-													}
-												}
-											},
-											#position : Point [ 0.0, 0.0 ],
-											#margin : @19,
-											#padding : @19,
-											#minHeight : 0.0,
-											#minWidth : 0.0,
-											#maxHeight : @21,
-											#maxWidth : @21,
-											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @84,
-											#previouslyAccessedConstraintsType : @62,
-											#accountTransformation : false
-										},
-										#visuals : @55,
-										#userData : IdentityDictionary {
-											#enabled : true,
-											#stonInnerImage : BlElement {
-												#children : BlChildrenArray [ ],
-												#constraints : BlLayoutCommonConstraints {
-													#vertical : BlLayoutCommonConstraintsAxis {
-														#resizer : BlLayoutExactResizer {
-															#size : 16.0
-														}
-													},
-													#horizontal : BlLayoutCommonConstraintsAxis {
-														#resizer : BlLayoutExactResizer {
-															#size : 16.0
-														}
-													},
-													#constraints : {
-														@62 : BlFrameLayoutConstraints {
-															#vertical : BlFrameLayoutConstraintsVertical {
-																#alignment : @15,
-																#weight : 1.0
-															},
-															#horizontal : BlFrameLayoutConstraintsHorizontal {
-																#alignment : @17,
-																#weight : 1.0
-															}
-														}
-													},
-													#position : Point [ 0.0, 0.0 ],
-													#margin : @19,
-													#padding : @19,
-													#minHeight : 0.0,
-													#minWidth : 0.0,
-													#maxHeight : @21,
-													#maxWidth : @21,
-													#ignoredByLayout : false,
-													#previouslyAccessedConstraints : @97,
-													#previouslyAccessedConstraintsType : @62,
-													#accountTransformation : false
-												},
-												#visuals : BlCustomVisuals {
-													#background : BlImageBackground {
-														#image : Form {
-															#bits : Bitmap [
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																1778384896,
-																3892314112,
-																3892314112,
-																1811939328,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																1962934272,
-																4278190080,
-																4278190080,
-																2013265920,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																1962934272,
-																4278190080,
-																4278190080,
-																2013265920,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																1962934272,
-																4278190080,
-																4278190080,
-																2013265920,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																1962934272,
-																4278190080,
-																4278190080,
-																2013265920,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																1962934272,
-																4278190080,
-																4278190080,
-																2013265920,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																2030043136,
-																3137339392,
-																3137339392,
-																3288334336,
-																3472883712,
-																3472883712,
-																3288334336,
-																3137339392,
-																3137339392,
-																2063597568,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																234881024,
-																3489660928,
-																4278190080,
-																4278190080,
-																4278190080,
-																4278190080,
-																4278190080,
-																4278190080,
-																3573547008,
-																285212672,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																452984832,
-																3791650816,
-																4278190080,
-																4278190080,
-																4278190080,
-																4278190080,
-																3858759680,
-																520093696,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																738197504,
-																4009754624,
-																4278190080,
-																4278190080,
-																4060086272,
-																822083584,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																1090519040,
-																4177526784,
-																4227858432,
-																1308622848,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																1610612736,
-																1660944384,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0,
-																0
-															],
-															#width : 16,
-															#height : 16,
-															#depth : 32
-														}
-													}
-												},
-												#userData : IdentityDictionary { },
-												#layout : BlBasicLayout { }
-											}
-										},
-										#layout : BlFrameLayout { }
-									},
-									#enabled : true
-								},
-								#layout : BlLinearLayout {
-									#weightSum : 0,
-									#verticalAlignment : BlNullVerticalAlignment { },
-									#horizontalAlignment : BlNullHorizontalAlignment { },
-									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @108
-									},
-									#shouldUseLargestChild : false,
-									#cellSpacing : 0.0,
-									#direction : BlLayoutRightToLeft { },
-									#interspace : 0.0
-								}
-							},
 							#enabled : true
 						},
 						#layout : BlLinearLayout {
 							#weightSum : 0,
-							#verticalAlignment : @109,
-							#horizontalAlignment : @110,
+							#verticalAlignment : BlNullVerticalAlignment { },
+							#horizontalAlignment : BlNullHorizontalAlignment { },
 							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @113
+								#layout : @50
 							},
 							#shouldUseLargestChild : false,
 							#cellSpacing : 0.0,
@@ -625,24 +175,29 @@ PyramidToploExamples class >> toplo [
 							ToCheckbox {
 								#constraints : BlLayoutCommonConstraints {
 									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#constraints : {
-										@12 : BlLinearLayoutConstraints {
+										@17 : BlLinearLayoutConstraints {
 											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : @15
+												#alignment : @20
 											},
 											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : @17
+												#alignment : @22
 											},
 											#weight : 1
 										}
 									},
 									#position : Point [ 0.0, 0.0 ],
-									#margin : @19,
+									#margin : BlInsets {
+										#top : 0.0,
+										#left : 10.0,
+										#bottom : 0.0,
+										#right : 10.0
+									},
 									#padding : BlInsets {
 										#top : 2.0,
 										#left : 0.0,
@@ -651,18 +206,24 @@ PyramidToploExamples class >> toplo [
 									},
 									#minHeight : 0.0,
 									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
+									#maxHeight : @26,
+									#maxWidth : @26,
 									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @122,
-									#previouslyAccessedConstraintsType : @12,
+									#previouslyAccessedConstraints : @61,
+									#previouslyAccessedConstraintsType : @17,
 									#accountTransformation : false
 								},
 								#visuals : BlCustomVisuals {
 									#geometry : BlRoundedRectangleGeometry {
 										#extent : Point [ 56.0, 22.0 ],
 										#pathCache : BlPathCache {
-											#geometry : @128
+											#geometry : @68,
+											#strokedBounds : BlBounds {
+												#left : 0.0,
+												#top : 0.0,
+												#right : 56.0,
+												#bottom : 22.0
+											}
 										},
 										#cornerRadii : BlCornerRadii {
 											#topLeft : 6,
@@ -683,10 +244,10 @@ PyramidToploExamples class >> toplo [
 										},
 										#width : 0,
 										#style : BlStrokeStyle {
-											#lineCap : @32,
-											#lineJoin : @33,
+											#lineCap : @37,
+											#lineJoin : @38,
 											#miterLimit : 4.0,
-											#dashArray : @34,
+											#dashArray : @39,
 											#dashOffset : 0.0
 										},
 										#opacity : 1.0
@@ -694,75 +255,75 @@ PyramidToploExamples class >> toplo [
 									#background : BlTransparentBackground {
 										
 									},
-									#mouseCursor : @38
+									#mouseCursor : @43
 								},
 								#userData : IdentityDictionary {
 									#stonLabeledIcon : ToLabeledIcon {
 										#constraints : BlLayoutCommonConstraints {
 											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
+												#resizer : @11
 											},
 											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @49
+												#resizer : BlLayoutMatchParentResizer { }
 											},
 											#constraints : {
-												@12 : BlLinearLayoutConstraints {
+												@17 : BlLinearLayoutConstraints {
 													#vertical : BlLinearLayoutConstraintsVertical {
-														#alignment : @15
+														#alignment : @20
 													},
 													#horizontal : BlLinearLayoutConstraintsHorizontal {
-														#alignment : @17
+														#alignment : @22
 													},
 													#weight : 1
 												}
 											},
 											#position : Point [ 0.0, 0.0 ],
-											#margin : @19,
-											#padding : @19,
+											#margin : @24,
+											#padding : @24,
 											#minHeight : 0.0,
 											#minWidth : 0.0,
-											#maxHeight : @21,
-											#maxWidth : @21,
+											#maxHeight : @26,
+											#maxWidth : @26,
 											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @144,
-											#previouslyAccessedConstraintsType : @12,
+											#previouslyAccessedConstraints : @86,
+											#previouslyAccessedConstraintsType : @17,
 											#accountTransformation : false
 										},
-										#visuals : @55,
+										#visuals : BlDefaultVisuals { },
 										#userData : IdentityDictionary {
 											#stonToLabel : ToLabel {
 												#constraints : BlLayoutCommonConstraints {
 													#vertical : BlLayoutCommonConstraintsAxis {
-														#resizer : @9
+														#resizer : @11
 													},
 													#horizontal : BlLayoutCommonConstraintsAxis {
-														#resizer : @9
+														#resizer : @11
 													},
 													#constraints : {
-														@62 : BlFrameLayoutConstraints {
+														Class [ #BlFrameLayout ] : BlFrameLayoutConstraints {
 															#vertical : BlFrameLayoutConstraintsVertical {
-																#alignment : @15,
+																#alignment : @20,
 																#weight : 1.0
 															},
 															#horizontal : BlFrameLayoutConstraintsHorizontal {
-																#alignment : @17,
+																#alignment : @22,
 																#weight : 1.0
 															}
 														}
 													},
 													#position : Point [ 0.0, 0.0 ],
-													#margin : @19,
-													#padding : @19,
+													#margin : @24,
+													#padding : @24,
 													#minHeight : 0.0,
 													#minWidth : 0.0,
-													#maxHeight : @21,
-													#maxWidth : @21,
+													#maxHeight : @26,
+													#maxWidth : @26,
 													#ignoredByLayout : false,
-													#previouslyAccessedConstraints : @154,
-													#previouslyAccessedConstraintsType : @62,
+													#previouslyAccessedConstraints : @98,
+													#previouslyAccessedConstraintsType : @97,
 													#accountTransformation : false
 												},
-												#visuals : @55,
+												#visuals : @90,
 												#userData : IdentityDictionary {
 													#enabled : true,
 													#stonToLabelText : BlRopedText {
@@ -786,7 +347,7 @@ PyramidToploExamples class >> toplo [
 																},
 																BlTextForegroundAttribute {
 																	#isOverwritableByStyler : true,
-																	#paint : @76
+																	#paint : Color [ #black ]
 																}
 															],
 															#rope : BlCollectionRope {
@@ -806,34 +367,39 @@ PyramidToploExamples class >> toplo [
 														#resizer : @9
 													},
 													#constraints : {
-														@62 : BlFrameLayoutConstraints {
+														@97 : BlFrameLayoutConstraints {
 															#vertical : BlFrameLayoutConstraintsVertical {
-																#alignment : @15,
+																#alignment : BlTopAlignment { },
 																#weight : 1.0
 															},
 															#horizontal : BlFrameLayoutConstraintsHorizontal {
-																#alignment : @17,
+																#alignment : BlHorizontalStartAlignment { },
 																#weight : 1.0
 															}
 														}
 													},
 													#position : Point [ 0.0, 0.0 ],
-													#margin : @19,
-													#padding : @19,
+													#margin : BlInsets {
+														#top : 0.0,
+														#left : 0.0,
+														#bottom : 0.0,
+														#right : 0.0
+													},
+													#padding : @125,
 													#minHeight : 0.0,
 													#minWidth : 0.0,
-													#maxHeight : @21,
-													#maxWidth : @21,
+													#maxHeight : @26,
+													#maxWidth : @26,
 													#ignoredByLayout : false,
-													#previouslyAccessedConstraints : @174,
-													#previouslyAccessedConstraintsType : @62,
+													#previouslyAccessedConstraints : @119,
+													#previouslyAccessedConstraintsType : @97,
 													#accountTransformation : false
 												},
 												#visuals : BlCustomVisuals {
 													#geometry : BlRoundedRectangleGeometry {
 														#extent : Point [ 16.0, 16.0 ],
 														#pathCache : BlPathCache {
-															#geometry : @179
+															#geometry : @127
 														},
 														#cornerRadii : BlCornerRadii {
 															#topLeft : 4,
@@ -845,14 +411,14 @@ PyramidToploExamples class >> toplo [
 													},
 													#border : BlBorder {
 														#paint : BlColorPaint {
-															#color : @30
+															#color : @35
 														},
 														#width : 1.0,
 														#style : BlStrokeStyle {
-															#lineCap : @32,
-															#lineJoin : @33,
+															#lineCap : @37,
+															#lineJoin : @38,
 															#miterLimit : 4.0,
-															#dashArray : @34,
+															#dashArray : @39,
 															#dashOffset : 0.0
 														},
 														#opacity : 1.0
@@ -873,27 +439,27 @@ PyramidToploExamples class >> toplo [
 																}
 															},
 															#constraints : {
-																@62 : BlFrameLayoutConstraints {
+																@97 : BlFrameLayoutConstraints {
 																	#vertical : BlFrameLayoutConstraintsVertical {
-																		#alignment : @15,
+																		#alignment : @121,
 																		#weight : 1.0
 																	},
 																	#horizontal : BlFrameLayoutConstraintsHorizontal {
-																		#alignment : @17,
+																		#alignment : @123,
 																		#weight : 1.0
 																	}
 																}
 															},
 															#position : Point [ 0.0, 0.0 ],
-															#margin : @19,
-															#padding : @19,
+															#margin : @125,
+															#padding : @125,
 															#minHeight : 0.0,
 															#minWidth : 0.0,
-															#maxHeight : @21,
-															#maxWidth : @21,
+															#maxHeight : @26,
+															#maxWidth : @26,
 															#ignoredByLayout : false,
-															#previouslyAccessedConstraints : @195,
-															#previouslyAccessedConstraintsType : @62,
+															#previouslyAccessedConstraints : @143,
+															#previouslyAccessedConstraintsType : @97,
 															#accountTransformation : false
 														},
 														#visuals : BlCustomVisuals {
@@ -908,10 +474,10 @@ PyramidToploExamples class >> toplo [
 																},
 																#width : 6,
 																#style : BlStrokeStyle {
-																	#lineCap : @32,
-																	#lineJoin : @33,
+																	#lineCap : @37,
+																	#lineJoin : @38,
 																	#miterLimit : 4.0,
-																	#dashArray : @34,
+																	#dashArray : @39,
 																	#dashOffset : 0.0
 																},
 																#opacity : 1.0
@@ -929,10 +495,10 @@ PyramidToploExamples class >> toplo [
 										},
 										#layout : BlLinearLayout {
 											#weightSum : 0,
-											#verticalAlignment : @109,
-											#horizontalAlignment : @110,
+											#verticalAlignment : @51,
+											#horizontalAlignment : @52,
 											#orientation : BlLinearLayoutHorizontalOrientation {
-												#layout : @207
+												#layout : @155
 											},
 											#shouldUseLargestChild : false,
 											#cellSpacing : 0.0,
@@ -947,10 +513,10 @@ PyramidToploExamples class >> toplo [
 								},
 								#layout : BlLinearLayout {
 									#weightSum : 0,
-									#verticalAlignment : @109,
-									#horizontalAlignment : @110,
+									#verticalAlignment : @51,
+									#horizontalAlignment : @52,
 									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @211
+										#layout : @159
 									},
 									#shouldUseLargestChild : false,
 									#cellSpacing : 0.0,
@@ -960,24 +526,24 @@ PyramidToploExamples class >> toplo [
 							ToCheckbox {
 								#constraints : BlLayoutCommonConstraints {
 									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#constraints : {
-										@12 : BlLinearLayoutConstraints {
+										@17 : BlLinearLayoutConstraints {
 											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : @15
+												#alignment : @20
 											},
 											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : @17
+												#alignment : @22
 											},
 											#weight : 1
 										}
 									},
 									#position : Point [ 0.0, 0.0 ],
-									#margin : @19,
+									#margin : @65,
 									#padding : BlInsets {
 										#top : 2.0,
 										#left : 0.0,
@@ -986,18 +552,24 @@ PyramidToploExamples class >> toplo [
 									},
 									#minHeight : 0.0,
 									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
+									#maxHeight : @26,
+									#maxWidth : @26,
 									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @218,
-									#previouslyAccessedConstraintsType : @12,
+									#previouslyAccessedConstraints : @166,
+									#previouslyAccessedConstraintsType : @17,
 									#accountTransformation : false
 								},
 								#visuals : BlCustomVisuals {
 									#geometry : BlRoundedRectangleGeometry {
 										#extent : Point [ 54.0, 22.0 ],
 										#pathCache : BlPathCache {
-											#geometry : @224
+											#geometry : @172,
+											#strokedBounds : BlBounds {
+												#left : 0.0,
+												#top : 0.0,
+												#right : 54.0,
+												#bottom : 22.0
+											}
 										},
 										#cornerRadii : BlCornerRadii {
 											#topLeft : 6,
@@ -1007,77 +579,77 @@ PyramidToploExamples class >> toplo [
 										},
 										#center : Point [ 27.0, 11.0 ]
 									},
-									#border : @133,
-									#background : @137,
-									#mouseCursor : @38
+									#border : @74,
+									#background : @78,
+									#mouseCursor : @43
 								},
 								#userData : IdentityDictionary {
 									#stonLabeledIcon : ToLabeledIcon {
 										#constraints : BlLayoutCommonConstraints {
 											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
+												#resizer : @11
 											},
 											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @49
+												#resizer : @84
 											},
 											#constraints : {
-												@12 : BlLinearLayoutConstraints {
+												@17 : BlLinearLayoutConstraints {
 													#vertical : BlLinearLayoutConstraintsVertical {
-														#alignment : @15
+														#alignment : @20
 													},
 													#horizontal : BlLinearLayoutConstraintsHorizontal {
-														#alignment : @17
+														#alignment : @22
 													},
 													#weight : 1
 												}
 											},
 											#position : Point [ 0.0, 0.0 ],
-											#margin : @19,
-											#padding : @19,
+											#margin : @24,
+											#padding : @24,
 											#minHeight : 0.0,
 											#minWidth : 0.0,
-											#maxHeight : @21,
-											#maxWidth : @21,
+											#maxHeight : @26,
+											#maxWidth : @26,
 											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @235,
-											#previouslyAccessedConstraintsType : @12,
+											#previouslyAccessedConstraints : @184,
+											#previouslyAccessedConstraintsType : @17,
 											#accountTransformation : false
 										},
-										#visuals : @55,
+										#visuals : @90,
 										#userData : IdentityDictionary {
 											#stonToLabel : ToLabel {
 												#constraints : BlLayoutCommonConstraints {
 													#vertical : BlLayoutCommonConstraintsAxis {
-														#resizer : @9
+														#resizer : @11
 													},
 													#horizontal : BlLayoutCommonConstraintsAxis {
-														#resizer : @9
+														#resizer : @11
 													},
 													#constraints : {
-														@62 : BlFrameLayoutConstraints {
+														@97 : BlFrameLayoutConstraints {
 															#vertical : BlFrameLayoutConstraintsVertical {
-																#alignment : @15,
+																#alignment : @20,
 																#weight : 1.0
 															},
 															#horizontal : BlFrameLayoutConstraintsHorizontal {
-																#alignment : @17,
+																#alignment : @22,
 																#weight : 1.0
 															}
 														}
 													},
 													#position : Point [ 0.0, 0.0 ],
-													#margin : @19,
-													#padding : @19,
+													#margin : @24,
+													#padding : @24,
 													#minHeight : 0.0,
 													#minWidth : 0.0,
-													#maxHeight : @21,
-													#maxWidth : @21,
+													#maxHeight : @26,
+													#maxWidth : @26,
 													#ignoredByLayout : false,
-													#previouslyAccessedConstraints : @245,
-													#previouslyAccessedConstraintsType : @62,
+													#previouslyAccessedConstraints : @194,
+													#previouslyAccessedConstraintsType : @97,
 													#accountTransformation : false
 												},
-												#visuals : @55,
+												#visuals : @90,
 												#userData : IdentityDictionary {
 													#enabled : true,
 													#stonToLabelText : BlRopedText {
@@ -1101,7 +673,7 @@ PyramidToploExamples class >> toplo [
 																},
 																BlTextForegroundAttribute {
 																	#isOverwritableByStyler : true,
-																	#paint : @76
+																	#paint : @111
 																}
 															],
 															#rope : BlCollectionRope {
@@ -1121,34 +693,34 @@ PyramidToploExamples class >> toplo [
 														#resizer : @9
 													},
 													#constraints : {
-														@62 : BlFrameLayoutConstraints {
+														@97 : BlFrameLayoutConstraints {
 															#vertical : BlFrameLayoutConstraintsVertical {
-																#alignment : @15,
+																#alignment : @121,
 																#weight : 1.0
 															},
 															#horizontal : BlFrameLayoutConstraintsHorizontal {
-																#alignment : @17,
+																#alignment : @123,
 																#weight : 1.0
 															}
 														}
 													},
 													#position : Point [ 0.0, 0.0 ],
-													#margin : @19,
-													#padding : @19,
+													#margin : @125,
+													#padding : @125,
 													#minHeight : 0.0,
 													#minWidth : 0.0,
-													#maxHeight : @21,
-													#maxWidth : @21,
+													#maxHeight : @26,
+													#maxWidth : @26,
 													#ignoredByLayout : false,
-													#previouslyAccessedConstraints : @265,
-													#previouslyAccessedConstraintsType : @62,
+													#previouslyAccessedConstraints : @214,
+													#previouslyAccessedConstraintsType : @97,
 													#accountTransformation : false
 												},
 												#visuals : BlCustomVisuals {
 													#geometry : BlRoundedRectangleGeometry {
 														#extent : Point [ 16.0, 16.0 ],
 														#pathCache : BlPathCache {
-															#geometry : @270
+															#geometry : @219
 														},
 														#cornerRadii : BlCornerRadii {
 															#topLeft : 4,
@@ -1160,14 +732,14 @@ PyramidToploExamples class >> toplo [
 													},
 													#border : BlBorder {
 														#paint : BlColorPaint {
-															#color : @30
+															#color : @35
 														},
 														#width : 1.0,
 														#style : BlStrokeStyle {
-															#lineCap : @32,
-															#lineJoin : @33,
+															#lineCap : @37,
+															#lineJoin : @38,
 															#miterLimit : 4.0,
-															#dashArray : @34,
+															#dashArray : @39,
 															#dashOffset : 0.0
 														},
 														#opacity : 1.0
@@ -1188,30 +760,30 @@ PyramidToploExamples class >> toplo [
 																}
 															},
 															#constraints : {
-																@62 : BlFrameLayoutConstraints {
+																@97 : BlFrameLayoutConstraints {
 																	#vertical : BlFrameLayoutConstraintsVertical {
-																		#alignment : @15,
+																		#alignment : @121,
 																		#weight : 1.0
 																	},
 																	#horizontal : BlFrameLayoutConstraintsHorizontal {
-																		#alignment : @17,
+																		#alignment : @123,
 																		#weight : 1.0
 																	}
 																}
 															},
 															#position : Point [ 0.0, 0.0 ],
-															#margin : @19,
-															#padding : @19,
+															#margin : @125,
+															#padding : @125,
 															#minHeight : 0.0,
 															#minWidth : 0.0,
-															#maxHeight : @21,
-															#maxWidth : @21,
+															#maxHeight : @26,
+															#maxWidth : @26,
 															#ignoredByLayout : false,
-															#previouslyAccessedConstraints : @286,
-															#previouslyAccessedConstraintsType : @62,
+															#previouslyAccessedConstraints : @235,
+															#previouslyAccessedConstraintsType : @97,
 															#accountTransformation : false
 														},
-														#visuals : @55,
+														#visuals : BlDefaultVisuals { },
 														#userData : IdentityDictionary {
 															#enabled : true
 														},
@@ -1224,10 +796,10 @@ PyramidToploExamples class >> toplo [
 										},
 										#layout : BlLinearLayout {
 											#weightSum : 0,
-											#verticalAlignment : @109,
-											#horizontalAlignment : @110,
+											#verticalAlignment : @51,
+											#horizontalAlignment : @52,
 											#orientation : BlLinearLayoutHorizontalOrientation {
-												#layout : @293
+												#layout : @243
 											},
 											#shouldUseLargestChild : false,
 											#cellSpacing : 0.0,
@@ -1236,14 +808,14 @@ PyramidToploExamples class >> toplo [
 									},
 									#stonChecked : false,
 									#enabled : true,
-									#stonGroup : @209
+									#stonGroup : @157
 								},
 								#layout : BlLinearLayout {
 									#weightSum : 0,
-									#verticalAlignment : @109,
-									#horizontalAlignment : @110,
+									#verticalAlignment : @51,
+									#horizontalAlignment : @52,
 									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @295
+										#layout : @245
 									},
 									#shouldUseLargestChild : false,
 									#cellSpacing : 0.0,
@@ -1253,24 +825,34 @@ PyramidToploExamples class >> toplo [
 						],
 						#constraints : BlLayoutCommonConstraints {
 							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : @11
 							},
 							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : @11
 							},
 							#constraints : {
-								@12 : BlLinearLayoutConstraints {
+								@13 : BlProportionalLayoutConstraints {
+									#vertical : BlProportionalLayoutConstraintsVertical {
+										#top : 0.5,
+										#bottom : 1
+									},
+									#horizontal : BlProportionalLayoutConstraintsHorizontal {
+										#left : 0.0,
+										#right : 1.0
+									}
+								},
+								@17 : BlLinearLayoutConstraints {
 									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @15
+										#alignment : @20
 									},
 									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : @17
+										#alignment : @22
 									},
 									#weight : 1
 								}
 							},
 							#position : Point [ 0.0, 0.0 ],
-							#margin : @19,
+							#margin : @24,
 							#padding : BlInsets {
 								#top : 0.0,
 								#left : 10.0,
@@ -1279,23 +861,23 @@ PyramidToploExamples class >> toplo [
 							},
 							#minHeight : 0.0,
 							#minWidth : 0.0,
-							#maxHeight : @21,
-							#maxWidth : @21,
+							#maxHeight : @26,
+							#maxWidth : @26,
 							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @301,
-							#previouslyAccessedConstraintsType : @12,
+							#previouslyAccessedConstraints : @251,
+							#previouslyAccessedConstraintsType : @13,
 							#accountTransformation : false
 						},
-						#visuals : @55,
+						#visuals : @90,
 						#userData : IdentityDictionary {
 							#enabled : true
 						},
 						#layout : BlLinearLayout {
 							#weightSum : 0,
-							#verticalAlignment : @109,
-							#horizontalAlignment : @110,
-							#orientation : BlLinearLayoutVerticalOrientation {
-								#layout : @307
+							#verticalAlignment : @51,
+							#horizontalAlignment : @52,
+							#orientation : BlLinearLayoutHorizontalOrientation {
+								#layout : @260
 							},
 							#shouldUseLargestChild : false,
 							#cellSpacing : 0.0,
@@ -1305,71 +887,68 @@ PyramidToploExamples class >> toplo [
 				],
 				#constraints : BlLayoutCommonConstraints {
 					#vertical : BlLayoutCommonConstraintsAxis {
-						#resizer : @9
+						#resizer : BlLayoutExactResizer {
+							#size : 100.0
+						}
 					},
 					#horizontal : BlLayoutCommonConstraintsAxis {
-						#resizer : @49
+						#resizer : BlLayoutMatchParentResizer { }
 					},
 					#constraints : {
-						@12 : BlLinearLayoutConstraints {
+						@17 : BlLinearLayoutConstraints {
 							#vertical : BlLinearLayoutConstraintsVertical {
-								#alignment : @15
+								#alignment : @20
 							},
 							#horizontal : BlLinearLayoutConstraintsHorizontal {
-								#alignment : @17
+								#alignment : @22
 							},
 							#weight : 1
 						}
 					},
 					#position : Point [ 0.0, 0.0 ],
-					#margin : @19,
-					#padding : @19,
+					#margin : BlInsets {
+						#top : 0.0,
+						#left : 0.0,
+						#bottom : 10.0,
+						#right : 0.0
+					},
+					#padding : @24,
 					#minHeight : 0.0,
 					#minWidth : 0.0,
-					#maxHeight : @21,
-					#maxWidth : @21,
+					#maxHeight : @26,
+					#maxWidth : @26,
 					#ignoredByLayout : false,
-					#previouslyAccessedConstraints : @313,
-					#previouslyAccessedConstraintsType : @12,
+					#previouslyAccessedConstraints : @268,
+					#previouslyAccessedConstraintsType : @17,
 					#accountTransformation : false
 				},
-				#visuals : @55,
+				#visuals : @90,
 				#userData : IdentityDictionary {
 					#enabled : true
 				},
-				#layout : BlLinearLayout {
-					#weightSum : 0,
-					#verticalAlignment : @109,
-					#horizontalAlignment : @110,
-					#orientation : BlLinearLayoutHorizontalOrientation {
-						#layout : @318
-					},
-					#shouldUseLargestChild : false,
-					#cellSpacing : 0.0,
-					#interspace : 0.0
-				}
+				#layout : BlProportionalLayout { }
 			},
 			ToCheckbox {
 				#constraints : BlLayoutCommonConstraints {
 					#vertical : BlLayoutCommonConstraintsAxis {
-						#resizer : @9
+						#resizer : @11
 					},
 					#horizontal : BlLayoutCommonConstraintsAxis {
-						#resizer : @9
+						#resizer : @11
 					},
 					#constraints : {
-						@12 : BlLinearLayoutConstraints {
+						@17 : BlLinearLayoutConstraints {
 							#vertical : BlLinearLayoutConstraintsVertical {
-								#alignment : @15
+								#alignment : @20
 							},
 							#horizontal : BlLinearLayoutConstraintsHorizontal {
-								#alignment : @17
+								#alignment : @22
 							},
 							#weight : 1
 						}
 					},
 					#position : Point [ 0.0, 0.0 ],
-					#margin : @19,
+					#margin : @272,
 					#padding : BlInsets {
 						#top : 2.0,
 						#left : 0.0,
@@ -1378,18 +957,24 @@ PyramidToploExamples class >> toplo [
 					},
 					#minHeight : 0.0,
 					#minWidth : 0.0,
-					#maxHeight : @21,
-					#maxWidth : @21,
+					#maxHeight : @26,
+					#maxWidth : @26,
 					#ignoredByLayout : false,
-					#previouslyAccessedConstraints : @325,
-					#previouslyAccessedConstraintsType : @12,
+					#previouslyAccessedConstraints : @280,
+					#previouslyAccessedConstraintsType : @17,
 					#accountTransformation : false
 				},
 				#visuals : BlCustomVisuals {
 					#geometry : BlRoundedRectangleGeometry {
 						#extent : Point [ 139.0, 22.0 ],
 						#pathCache : BlPathCache {
-							#geometry : @331
+							#geometry : @286,
+							#strokedBounds : BlBounds {
+								#left : 0.0,
+								#top : 0.0,
+								#right : 139.0,
+								#bottom : 22.0
+							}
 						},
 						#cornerRadii : BlCornerRadii {
 							#topLeft : 6,
@@ -1399,77 +984,77 @@ PyramidToploExamples class >> toplo [
 						},
 						#center : Point [ 69.5, 11.0 ]
 					},
-					#border : @133,
-					#background : @137,
-					#mouseCursor : @38
+					#border : @74,
+					#background : @78,
+					#mouseCursor : @43
 				},
 				#userData : IdentityDictionary {
 					#stonLabeledIcon : ToLabeledIcon {
 						#constraints : BlLayoutCommonConstraints {
 							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : @11
 							},
 							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @49
+								#resizer : @84
 							},
 							#constraints : {
-								@12 : BlLinearLayoutConstraints {
+								@17 : BlLinearLayoutConstraints {
 									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @15
+										#alignment : @20
 									},
 									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : @17
+										#alignment : @22
 									},
 									#weight : 1
 								}
 							},
 							#position : Point [ 0.0, 0.0 ],
-							#margin : @19,
-							#padding : @19,
+							#margin : @24,
+							#padding : @24,
 							#minHeight : 0.0,
 							#minWidth : 0.0,
-							#maxHeight : @21,
-							#maxWidth : @21,
+							#maxHeight : @26,
+							#maxWidth : @26,
 							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @342,
-							#previouslyAccessedConstraintsType : @12,
+							#previouslyAccessedConstraints : @298,
+							#previouslyAccessedConstraintsType : @17,
 							#accountTransformation : false
 						},
-						#visuals : @55,
+						#visuals : @90,
 						#userData : IdentityDictionary {
 							#stonToLabel : ToLabel {
 								#constraints : BlLayoutCommonConstraints {
 									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#constraints : {
-										@62 : BlFrameLayoutConstraints {
+										@97 : BlFrameLayoutConstraints {
 											#vertical : BlFrameLayoutConstraintsVertical {
-												#alignment : @15,
+												#alignment : @20,
 												#weight : 1.0
 											},
 											#horizontal : BlFrameLayoutConstraintsHorizontal {
-												#alignment : @17,
+												#alignment : @22,
 												#weight : 1.0
 											}
 										}
 									},
 									#position : Point [ 0.0, 0.0 ],
-									#margin : @19,
-									#padding : @19,
+									#margin : @24,
+									#padding : @24,
 									#minHeight : 0.0,
 									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
+									#maxHeight : @26,
+									#maxWidth : @26,
 									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @352,
-									#previouslyAccessedConstraintsType : @62,
+									#previouslyAccessedConstraints : @308,
+									#previouslyAccessedConstraintsType : @97,
 									#accountTransformation : false
 								},
-								#visuals : @55,
+								#visuals : @90,
 								#userData : IdentityDictionary {
 									#enabled : true,
 									#stonToLabelText : BlRopedText {
@@ -1493,7 +1078,7 @@ PyramidToploExamples class >> toplo [
 												},
 												BlTextForegroundAttribute {
 													#isOverwritableByStyler : true,
-													#paint : @76
+													#paint : @111
 												}
 											],
 											#rope : BlCollectionRope {
@@ -1513,34 +1098,34 @@ PyramidToploExamples class >> toplo [
 										#resizer : @9
 									},
 									#constraints : {
-										@62 : BlFrameLayoutConstraints {
+										@97 : BlFrameLayoutConstraints {
 											#vertical : BlFrameLayoutConstraintsVertical {
-												#alignment : @15,
+												#alignment : @121,
 												#weight : 1.0
 											},
 											#horizontal : BlFrameLayoutConstraintsHorizontal {
-												#alignment : @17,
+												#alignment : @123,
 												#weight : 1.0
 											}
 										}
 									},
 									#position : Point [ 0.0, 0.0 ],
-									#margin : @19,
-									#padding : @19,
+									#margin : @125,
+									#padding : @125,
 									#minHeight : 0.0,
 									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
+									#maxHeight : @26,
+									#maxWidth : @26,
 									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @372,
-									#previouslyAccessedConstraintsType : @62,
+									#previouslyAccessedConstraints : @328,
+									#previouslyAccessedConstraintsType : @97,
 									#accountTransformation : false
 								},
 								#visuals : BlCustomVisuals {
 									#geometry : BlRoundedRectangleGeometry {
 										#extent : Point [ 16.0, 16.0 ],
 										#pathCache : BlPathCache {
-											#geometry : @377
+											#geometry : @333
 										},
 										#cornerRadii : BlCornerRadii {
 											#topLeft : 4,
@@ -1552,14 +1137,14 @@ PyramidToploExamples class >> toplo [
 									},
 									#border : BlBorder {
 										#paint : BlColorPaint {
-											#color : @30
+											#color : @35
 										},
 										#width : 1.0,
 										#style : BlStrokeStyle {
-											#lineCap : @32,
-											#lineJoin : @33,
+											#lineCap : @37,
+											#lineJoin : @38,
 											#miterLimit : 4.0,
-											#dashArray : @34,
+											#dashArray : @39,
 											#dashOffset : 0.0
 										},
 										#opacity : 1.0
@@ -1580,30 +1165,30 @@ PyramidToploExamples class >> toplo [
 												}
 											},
 											#constraints : {
-												@62 : BlFrameLayoutConstraints {
+												@97 : BlFrameLayoutConstraints {
 													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @15,
+														#alignment : @121,
 														#weight : 1.0
 													},
 													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @17,
+														#alignment : @123,
 														#weight : 1.0
 													}
 												}
 											},
 											#position : Point [ 0.0, 0.0 ],
-											#margin : @19,
-											#padding : @19,
+											#margin : @125,
+											#padding : @125,
 											#minHeight : 0.0,
 											#minWidth : 0.0,
-											#maxHeight : @21,
-											#maxWidth : @21,
+											#maxHeight : @26,
+											#maxWidth : @26,
 											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @393,
-											#previouslyAccessedConstraintsType : @62,
+											#previouslyAccessedConstraints : @349,
+											#previouslyAccessedConstraintsType : @97,
 											#accountTransformation : false
 										},
-										#visuals : @55,
+										#visuals : @239,
 										#userData : IdentityDictionary {
 											#enabled : true
 										},
@@ -1616,10 +1201,10 @@ PyramidToploExamples class >> toplo [
 						},
 						#layout : BlLinearLayout {
 							#weightSum : 0,
-							#verticalAlignment : @109,
-							#horizontalAlignment : @110,
+							#verticalAlignment : @51,
+							#horizontalAlignment : @52,
 							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @400
+								#layout : @356
 							},
 							#shouldUseLargestChild : false,
 							#cellSpacing : 0.0,
@@ -1631,10 +1216,10 @@ PyramidToploExamples class >> toplo [
 				},
 				#layout : BlLinearLayout {
 					#weightSum : 0,
-					#verticalAlignment : @109,
-					#horizontalAlignment : @110,
+					#verticalAlignment : @51,
+					#horizontalAlignment : @52,
 					#orientation : BlLinearLayoutHorizontalOrientation {
-						#layout : @402
+						#layout : @358
 					},
 					#shouldUseLargestChild : false,
 					#cellSpacing : 0.0,
@@ -1646,24 +1231,34 @@ PyramidToploExamples class >> toplo [
 					ToButton {
 						#constraints : BlLayoutCommonConstraints {
 							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : @11
 							},
 							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : @11
 							},
 							#constraints : {
-								@12 : BlLinearLayoutConstraints {
+								@97 : BlFrameLayoutConstraints {
+									#vertical : BlFrameLayoutConstraintsVertical {
+										#alignment : @121,
+										#weight : 1.0
+									},
+									#horizontal : BlFrameLayoutConstraintsHorizontal {
+										#alignment : BlHorizontalCenterAlignment { },
+										#weight : 1.0
+									}
+								},
+								@17 : BlLinearLayoutConstraints {
 									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @15
+										#alignment : @20
 									},
 									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : @17
+										#alignment : @22
 									},
 									#weight : 1
 								}
 							},
 							#position : Point [ 0.0, 0.0 ],
-							#margin : @19,
+							#margin : @24,
 							#padding : BlInsets {
 								#top : 4.0,
 								#left : 8.0,
@@ -1672,18 +1267,24 @@ PyramidToploExamples class >> toplo [
 							},
 							#minHeight : 0.0,
 							#minWidth : 0.0,
-							#maxHeight : @21,
-							#maxWidth : @21,
+							#maxHeight : @26,
+							#maxWidth : @26,
 							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @411,
-							#previouslyAccessedConstraintsType : @12,
+							#previouslyAccessedConstraints : @367,
+							#previouslyAccessedConstraintsType : @97,
 							#accountTransformation : false
 						},
 						#visuals : BlCustomVisuals {
 							#geometry : BlRoundedRectangleGeometry {
 								#extent : Point [ 200.0, 26.0 ],
 								#pathCache : BlPathCache {
-									#geometry : @417
+									#geometry : @377,
+									#strokedBounds : BlBounds {
+										#left : 0.0,
+										#top : 0.0,
+										#right : 200.0,
+										#bottom : 26.0
+									}
 								},
 								#cornerRadii : BlCornerRadii {
 									#topLeft : 6,
@@ -1695,29 +1296,24 @@ PyramidToploExamples class >> toplo [
 							},
 							#border : BlBorder {
 								#paint : BlColorPaint {
-									#color : Color {
-										#red : 0.8514173998044966,
-										#green : 0.8514173998044966,
-										#blue : 0.8514173998044966,
-										#alpha : 1.0
-									}
+									#color : @35
 								},
 								#width : 1,
 								#style : BlStrokeStyle {
-									#lineCap : @32,
-									#lineJoin : @33,
+									#lineCap : @37,
+									#lineJoin : @38,
 									#miterLimit : 4.0,
-									#dashArray : @34,
+									#dashArray : @39,
 									#dashOffset : 0.0
 								},
 								#opacity : 1.0
 							},
 							#background : BlPaintBackground {
 								#paint : BlColorPaint {
-									#color : @37
+									#color : @42
 								}
 							},
-							#mouseCursor : @38
+							#mouseCursor : @43
 						},
 						#userData : IdentityDictionary {
 							#elementId : BlElementNamedId {
@@ -1726,69 +1322,69 @@ PyramidToploExamples class >> toplo [
 							#stonLabeledIcon : ToLabeledIcon {
 								#constraints : BlLayoutCommonConstraints {
 									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : @49
+										#resizer : @84
 									},
 									#constraints : {
-										@12 : BlLinearLayoutConstraints {
+										@17 : BlLinearLayoutConstraints {
 											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : @15
+												#alignment : @20
 											},
 											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : @17
+												#alignment : @22
 											},
 											#weight : 1
 										}
 									},
 									#position : Point [ 0.0, 0.0 ],
-									#margin : @19,
-									#padding : @19,
+									#margin : @24,
+									#padding : @24,
 									#minHeight : 0.0,
 									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
+									#maxHeight : @26,
+									#maxWidth : @26,
 									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @435,
-									#previouslyAccessedConstraintsType : @12,
+									#previouslyAccessedConstraints : @395,
+									#previouslyAccessedConstraintsType : @17,
 									#accountTransformation : false
 								},
-								#visuals : @55,
+								#visuals : @90,
 								#userData : IdentityDictionary {
 									#stonToLabel : ToLabel {
 										#constraints : BlLayoutCommonConstraints {
 											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
+												#resizer : @11
 											},
 											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
+												#resizer : @11
 											},
 											#constraints : {
-												@62 : BlFrameLayoutConstraints {
+												@97 : BlFrameLayoutConstraints {
 													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @15,
+														#alignment : @20,
 														#weight : 1.0
 													},
 													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @17,
+														#alignment : @22,
 														#weight : 1.0
 													}
 												}
 											},
 											#position : Point [ 0.0, 0.0 ],
-											#margin : @19,
-											#padding : @19,
+											#margin : @24,
+											#padding : @24,
 											#minHeight : 0.0,
 											#minWidth : 0.0,
-											#maxHeight : @21,
-											#maxWidth : @21,
+											#maxHeight : @26,
+											#maxWidth : @26,
 											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @445,
-											#previouslyAccessedConstraintsType : @62,
+											#previouslyAccessedConstraints : @405,
+											#previouslyAccessedConstraintsType : @97,
 											#accountTransformation : false
 										},
-										#visuals : @55,
+										#visuals : @90,
 										#userData : IdentityDictionary {
 											#enabled : true,
 											#stonToLabelText : BlRopedText {
@@ -1812,7 +1408,7 @@ PyramidToploExamples class >> toplo [
 														},
 														BlTextForegroundAttribute {
 															#isOverwritableByStyler : true,
-															#paint : @76
+															#paint : @111
 														}
 													],
 													#rope : BlCollectionRope {
@@ -1828,10 +1424,10 @@ PyramidToploExamples class >> toplo [
 								},
 								#layout : BlLinearLayout {
 									#weightSum : 0,
-									#verticalAlignment : @109,
-									#horizontalAlignment : @110,
+									#verticalAlignment : @51,
+									#horizontalAlignment : @52,
 									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @460
+										#layout : @420
 									},
 									#shouldUseLargestChild : false,
 									#cellSpacing : 0.0,
@@ -1842,22 +1438,22 @@ PyramidToploExamples class >> toplo [
 							#tooltipContent : ToLabel {
 								#constraints : BlLayoutCommonConstraints {
 									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#position : Point [ 0.0, 0.0 ],
-									#margin : @19,
-									#padding : @19,
+									#margin : @24,
+									#padding : @24,
 									#minHeight : 0.0,
 									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
+									#maxHeight : @26,
+									#maxWidth : @26,
 									#ignoredByLayout : false,
 									#accountTransformation : false
 								},
-								#visuals : @55,
+								#visuals : @90,
 								#userData : IdentityDictionary {
 									#enabled : true,
 									#stonToLabelText : BlRopedText {
@@ -1871,10 +1467,10 @@ PyramidToploExamples class >> toplo [
 						},
 						#layout : BlLinearLayout {
 							#weightSum : 0,
-							#verticalAlignment : @109,
-							#horizontalAlignment : @110,
+							#verticalAlignment : @51,
+							#horizontalAlignment : @52,
 							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @471
+								#layout : @431
 							},
 							#shouldUseLargestChild : false,
 							#cellSpacing : 0.0,
@@ -1884,24 +1480,34 @@ PyramidToploExamples class >> toplo [
 					ToCheckbox {
 						#constraints : BlLayoutCommonConstraints {
 							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : @11
 							},
 							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : @11
 							},
 							#constraints : {
-								@12 : BlLinearLayoutConstraints {
+								@97 : BlFrameLayoutConstraints {
+									#vertical : BlFrameLayoutConstraintsVertical {
+										#alignment : BlVerticalCenterAlignment { },
+										#weight : 1.0
+									},
+									#horizontal : BlFrameLayoutConstraintsHorizontal {
+										#alignment : @370,
+										#weight : 1.0
+									}
+								},
+								@17 : BlLinearLayoutConstraints {
 									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @15
+										#alignment : @20
 									},
 									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : @17
+										#alignment : @22
 									},
 									#weight : 1
 								}
 							},
 							#position : Point [ 0.0, 0.0 ],
-							#margin : @19,
+							#margin : @24,
 							#padding : BlInsets {
 								#top : 2.0,
 								#left : 0.0,
@@ -1910,18 +1516,24 @@ PyramidToploExamples class >> toplo [
 							},
 							#minHeight : 0.0,
 							#minWidth : 0.0,
-							#maxHeight : @21,
-							#maxWidth : @21,
+							#maxHeight : @26,
+							#maxWidth : @26,
 							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @478,
-							#previouslyAccessedConstraintsType : @12,
+							#previouslyAccessedConstraints : @438,
+							#previouslyAccessedConstraintsType : @97,
 							#accountTransformation : false
 						},
 						#visuals : BlCustomVisuals {
 							#geometry : BlRoundedRectangleGeometry {
 								#extent : Point [ 109.0, 22.0 ],
 								#pathCache : BlPathCache {
-									#geometry : @484
+									#geometry : @448,
+									#strokedBounds : BlBounds {
+										#left : 0.0,
+										#top : 0.0,
+										#right : 109.0,
+										#bottom : 22.0
+									}
 								},
 								#cornerRadii : BlCornerRadii {
 									#topLeft : 6,
@@ -1931,77 +1543,77 @@ PyramidToploExamples class >> toplo [
 								},
 								#center : Point [ 54.5, 11.0 ]
 							},
-							#border : @133,
-							#background : @137,
-							#mouseCursor : @38
+							#border : @74,
+							#background : @78,
+							#mouseCursor : @43
 						},
 						#userData : IdentityDictionary {
 							#stonLabeledIcon : ToLabeledIcon {
 								#constraints : BlLayoutCommonConstraints {
 									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : @49
+										#resizer : @84
 									},
 									#constraints : {
-										@12 : BlLinearLayoutConstraints {
+										@17 : BlLinearLayoutConstraints {
 											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : @15
+												#alignment : @20
 											},
 											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : @17
+												#alignment : @22
 											},
 											#weight : 1
 										}
 									},
 									#position : Point [ 0.0, 0.0 ],
-									#margin : @19,
-									#padding : @19,
+									#margin : @24,
+									#padding : @24,
 									#minHeight : 0.0,
 									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
+									#maxHeight : @26,
+									#maxWidth : @26,
 									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @495,
-									#previouslyAccessedConstraintsType : @12,
+									#previouslyAccessedConstraints : @460,
+									#previouslyAccessedConstraintsType : @17,
 									#accountTransformation : false
 								},
-								#visuals : @55,
+								#visuals : @90,
 								#userData : IdentityDictionary {
 									#stonToLabel : ToLabel {
 										#constraints : BlLayoutCommonConstraints {
 											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
+												#resizer : @11
 											},
 											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
+												#resizer : @11
 											},
 											#constraints : {
-												@62 : BlFrameLayoutConstraints {
+												@97 : BlFrameLayoutConstraints {
 													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @15,
+														#alignment : @20,
 														#weight : 1.0
 													},
 													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @17,
+														#alignment : @22,
 														#weight : 1.0
 													}
 												}
 											},
 											#position : Point [ 0.0, 0.0 ],
-											#margin : @19,
-											#padding : @19,
+											#margin : @24,
+											#padding : @24,
 											#minHeight : 0.0,
 											#minWidth : 0.0,
-											#maxHeight : @21,
-											#maxWidth : @21,
+											#maxHeight : @26,
+											#maxWidth : @26,
 											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @505,
-											#previouslyAccessedConstraintsType : @62,
+											#previouslyAccessedConstraints : @470,
+											#previouslyAccessedConstraintsType : @97,
 											#accountTransformation : false
 										},
-										#visuals : @55,
+										#visuals : @90,
 										#userData : IdentityDictionary {
 											#enabled : true,
 											#stonToLabelText : BlRopedText {
@@ -2025,7 +1637,7 @@ PyramidToploExamples class >> toplo [
 														},
 														BlTextForegroundAttribute {
 															#isOverwritableByStyler : true,
-															#paint : @76
+															#paint : @111
 														}
 													],
 													#rope : BlCollectionRope {
@@ -2045,34 +1657,34 @@ PyramidToploExamples class >> toplo [
 												#resizer : @9
 											},
 											#constraints : {
-												@62 : BlFrameLayoutConstraints {
+												@97 : BlFrameLayoutConstraints {
 													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @15,
+														#alignment : @121,
 														#weight : 1.0
 													},
 													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @17,
+														#alignment : @123,
 														#weight : 1.0
 													}
 												}
 											},
 											#position : Point [ 0.0, 0.0 ],
-											#margin : @19,
-											#padding : @19,
+											#margin : @125,
+											#padding : @125,
 											#minHeight : 0.0,
 											#minWidth : 0.0,
-											#maxHeight : @21,
-											#maxWidth : @21,
+											#maxHeight : @26,
+											#maxWidth : @26,
 											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @525,
-											#previouslyAccessedConstraintsType : @62,
+											#previouslyAccessedConstraints : @490,
+											#previouslyAccessedConstraintsType : @97,
 											#accountTransformation : false
 										},
 										#visuals : BlCustomVisuals {
 											#geometry : BlRoundedRectangleGeometry {
 												#extent : Point [ 16.0, 16.0 ],
 												#pathCache : BlPathCache {
-													#geometry : @530
+													#geometry : @495
 												},
 												#cornerRadii : BlCornerRadii {
 													#topLeft : 4,
@@ -2084,14 +1696,14 @@ PyramidToploExamples class >> toplo [
 											},
 											#border : BlBorder {
 												#paint : BlColorPaint {
-													#color : @30
+													#color : @35
 												},
 												#width : 1.0,
 												#style : BlStrokeStyle {
-													#lineCap : @32,
-													#lineJoin : @33,
+													#lineCap : @37,
+													#lineJoin : @38,
 													#miterLimit : 4.0,
-													#dashArray : @34,
+													#dashArray : @39,
 													#dashOffset : 0.0
 												},
 												#opacity : 1.0
@@ -2112,40 +1724,40 @@ PyramidToploExamples class >> toplo [
 														}
 													},
 													#constraints : {
-														@62 : BlFrameLayoutConstraints {
+														@97 : BlFrameLayoutConstraints {
 															#vertical : BlFrameLayoutConstraintsVertical {
-																#alignment : @15,
+																#alignment : @121,
 																#weight : 1.0
 															},
 															#horizontal : BlFrameLayoutConstraintsHorizontal {
-																#alignment : @17,
+																#alignment : @123,
 																#weight : 1.0
 															}
 														}
 													},
 													#position : Point [ 0.0, 0.0 ],
-													#margin : @19,
-													#padding : @19,
+													#margin : @125,
+													#padding : @125,
 													#minHeight : 0.0,
 													#minWidth : 0.0,
-													#maxHeight : @21,
-													#maxWidth : @21,
+													#maxHeight : @26,
+													#maxWidth : @26,
 													#ignoredByLayout : false,
-													#previouslyAccessedConstraints : @546,
-													#previouslyAccessedConstraintsType : @62,
+													#previouslyAccessedConstraints : @511,
+													#previouslyAccessedConstraintsType : @97,
 													#accountTransformation : false
 												},
 												#visuals : BlCustomVisuals {
 													#border : BlBorder {
 														#paint : BlColorPaint {
-															#color : @202
+															#color : @150
 														},
 														#width : 6,
 														#style : BlStrokeStyle {
-															#lineCap : @32,
-															#lineJoin : @33,
+															#lineCap : @37,
+															#lineJoin : @38,
 															#miterLimit : 4.0,
-															#dashArray : @34,
+															#dashArray : @39,
 															#dashOffset : 0.0
 														},
 														#opacity : 1.0
@@ -2163,10 +1775,10 @@ PyramidToploExamples class >> toplo [
 								},
 								#layout : BlLinearLayout {
 									#weightSum : 0,
-									#verticalAlignment : @109,
-									#horizontalAlignment : @110,
+									#verticalAlignment : @51,
+									#horizontalAlignment : @52,
 									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @557
+										#layout : @522
 									},
 									#shouldUseLargestChild : false,
 									#cellSpacing : 0.0,
@@ -2178,10 +1790,10 @@ PyramidToploExamples class >> toplo [
 						},
 						#layout : BlLinearLayout {
 							#weightSum : 0,
-							#verticalAlignment : @109,
-							#horizontalAlignment : @110,
+							#verticalAlignment : @51,
+							#horizontalAlignment : @52,
 							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @559
+								#layout : @524
 							},
 							#shouldUseLargestChild : false,
 							#cellSpacing : 0.0,
@@ -2191,24 +1803,34 @@ PyramidToploExamples class >> toplo [
 					ToButton {
 						#constraints : BlLayoutCommonConstraints {
 							#vertical : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : @11
 							},
 							#horizontal : BlLayoutCommonConstraintsAxis {
-								#resizer : @9
+								#resizer : @11
 							},
 							#constraints : {
-								@12 : BlLinearLayoutConstraints {
+								@97 : BlFrameLayoutConstraints {
+									#vertical : BlFrameLayoutConstraintsVertical {
+										#alignment : BlBottomAlignment { },
+										#weight : 1.0
+									},
+									#horizontal : BlFrameLayoutConstraintsHorizontal {
+										#alignment : @370,
+										#weight : 1.0
+									}
+								},
+								@17 : BlLinearLayoutConstraints {
 									#vertical : BlLinearLayoutConstraintsVertical {
-										#alignment : @15
+										#alignment : @20
 									},
 									#horizontal : BlLinearLayoutConstraintsHorizontal {
-										#alignment : @17
+										#alignment : @22
 									},
 									#weight : 1
 								}
 							},
 							#position : Point [ 0.0, 0.0 ],
-							#margin : @19,
+							#margin : @24,
 							#padding : BlInsets {
 								#top : 4.0,
 								#left : 8.0,
@@ -2217,18 +1839,24 @@ PyramidToploExamples class >> toplo [
 							},
 							#minHeight : 0.0,
 							#minWidth : 0.0,
-							#maxHeight : @21,
-							#maxWidth : @21,
+							#maxHeight : @26,
+							#maxWidth : @26,
 							#ignoredByLayout : false,
-							#previouslyAccessedConstraints : @566,
-							#previouslyAccessedConstraintsType : @12,
+							#previouslyAccessedConstraints : @531,
+							#previouslyAccessedConstraintsType : @97,
 							#accountTransformation : false
 						},
 						#visuals : BlCustomVisuals {
 							#geometry : BlRoundedRectangleGeometry {
 								#extent : Point [ 68.0, 26.0 ],
 								#pathCache : BlPathCache {
-									#geometry : @572
+									#geometry : @541,
+									#strokedBounds : BlBounds {
+										#left : 0.0,
+										#top : 0.0,
+										#right : 68.0,
+										#bottom : 26.0
+									}
 								},
 								#cornerRadii : BlCornerRadii {
 									#topLeft : 6,
@@ -2240,24 +1868,24 @@ PyramidToploExamples class >> toplo [
 							},
 							#border : BlBorder {
 								#paint : BlColorPaint {
-									#color : @424
+									#color : @35
 								},
 								#width : 1,
 								#style : BlStrokeStyle {
-									#lineCap : @32,
-									#lineJoin : @33,
+									#lineCap : @37,
+									#lineJoin : @38,
 									#miterLimit : 4.0,
-									#dashArray : @34,
+									#dashArray : @39,
 									#dashOffset : 0.0
 								},
 								#opacity : 1.0
 							},
 							#background : BlPaintBackground {
 								#paint : BlColorPaint {
-									#color : @37
+									#color : @42
 								}
 							},
-							#mouseCursor : @38
+							#mouseCursor : @43
 						},
 						#userData : IdentityDictionary {
 							#elementId : BlElementNamedId {
@@ -2266,69 +1894,69 @@ PyramidToploExamples class >> toplo [
 							#stonLabeledIcon : ToLabeledIcon {
 								#constraints : BlLayoutCommonConstraints {
 									#vertical : BlLayoutCommonConstraintsAxis {
-										#resizer : @9
+										#resizer : @11
 									},
 									#horizontal : BlLayoutCommonConstraintsAxis {
-										#resizer : @49
+										#resizer : @84
 									},
 									#constraints : {
-										@12 : BlLinearLayoutConstraints {
+										@17 : BlLinearLayoutConstraints {
 											#vertical : BlLinearLayoutConstraintsVertical {
-												#alignment : @15
+												#alignment : @20
 											},
 											#horizontal : BlLinearLayoutConstraintsHorizontal {
-												#alignment : @17
+												#alignment : @22
 											},
 											#weight : 1
 										}
 									},
 									#position : Point [ 0.0, 0.0 ],
-									#margin : @19,
-									#padding : @19,
+									#margin : @24,
+									#padding : @24,
 									#minHeight : 0.0,
 									#minWidth : 0.0,
-									#maxHeight : @21,
-									#maxWidth : @21,
+									#maxHeight : @26,
+									#maxWidth : @26,
 									#ignoredByLayout : false,
-									#previouslyAccessedConstraints : @589,
-									#previouslyAccessedConstraintsType : @12,
+									#previouslyAccessedConstraints : @559,
+									#previouslyAccessedConstraintsType : @17,
 									#accountTransformation : false
 								},
-								#visuals : @55,
+								#visuals : @90,
 								#userData : IdentityDictionary {
 									#stonToLabel : ToLabel {
 										#constraints : BlLayoutCommonConstraints {
 											#vertical : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
+												#resizer : @11
 											},
 											#horizontal : BlLayoutCommonConstraintsAxis {
-												#resizer : @9
+												#resizer : @11
 											},
 											#constraints : {
-												@62 : BlFrameLayoutConstraints {
+												@97 : BlFrameLayoutConstraints {
 													#vertical : BlFrameLayoutConstraintsVertical {
-														#alignment : @15,
+														#alignment : @20,
 														#weight : 1.0
 													},
 													#horizontal : BlFrameLayoutConstraintsHorizontal {
-														#alignment : @17,
+														#alignment : @22,
 														#weight : 1.0
 													}
 												}
 											},
 											#position : Point [ 0.0, 0.0 ],
-											#margin : @19,
-											#padding : @19,
+											#margin : @24,
+											#padding : @24,
 											#minHeight : 0.0,
 											#minWidth : 0.0,
-											#maxHeight : @21,
-											#maxWidth : @21,
+											#maxHeight : @26,
+											#maxWidth : @26,
 											#ignoredByLayout : false,
-											#previouslyAccessedConstraints : @599,
-											#previouslyAccessedConstraintsType : @62,
+											#previouslyAccessedConstraints : @569,
+											#previouslyAccessedConstraintsType : @97,
 											#accountTransformation : false
 										},
-										#visuals : @55,
+										#visuals : @90,
 										#userData : IdentityDictionary {
 											#enabled : true,
 											#stonToLabelText : BlRopedText {
@@ -2352,7 +1980,7 @@ PyramidToploExamples class >> toplo [
 														},
 														BlTextForegroundAttribute {
 															#isOverwritableByStyler : true,
-															#paint : @76
+															#paint : @111
 														}
 													],
 													#rope : BlCollectionRope {
@@ -2368,10 +1996,10 @@ PyramidToploExamples class >> toplo [
 								},
 								#layout : BlLinearLayout {
 									#weightSum : 0,
-									#verticalAlignment : @109,
-									#horizontalAlignment : @110,
+									#verticalAlignment : @51,
+									#horizontalAlignment : @52,
 									#orientation : BlLinearLayoutHorizontalOrientation {
-										#layout : @614
+										#layout : @584
 									},
 									#shouldUseLargestChild : false,
 									#cellSpacing : 0.0,
@@ -2382,10 +2010,10 @@ PyramidToploExamples class >> toplo [
 						},
 						#layout : BlLinearLayout {
 							#weightSum : 0,
-							#verticalAlignment : @109,
-							#horizontalAlignment : @110,
+							#verticalAlignment : @51,
+							#horizontalAlignment : @52,
 							#orientation : BlLinearLayoutHorizontalOrientation {
-								#layout : @616
+								#layout : @586
 							},
 							#shouldUseLargestChild : false,
 							#cellSpacing : 0.0,
@@ -2395,71 +2023,61 @@ PyramidToploExamples class >> toplo [
 				],
 				#constraints : BlLayoutCommonConstraints {
 					#vertical : BlLayoutCommonConstraintsAxis {
-						#resizer : @49
+						#resizer : @264
 					},
 					#horizontal : BlLayoutCommonConstraintsAxis {
-						#resizer : @9
+						#resizer : @11
 					},
 					#constraints : {
-						@12 : BlLinearLayoutConstraints {
+						@17 : BlLinearLayoutConstraints {
 							#vertical : BlLinearLayoutConstraintsVertical {
-								#alignment : @15
+								#alignment : @20
 							},
 							#horizontal : BlLinearLayoutConstraintsHorizontal {
-								#alignment : @17
+								#alignment : @22
 							},
 							#weight : 1
 						}
 					},
 					#position : Point [ 0.0, 0.0 ],
-					#margin : @19,
-					#padding : @19,
+					#margin : @24,
+					#padding : @24,
 					#minHeight : 0.0,
 					#minWidth : 0.0,
-					#maxHeight : @21,
-					#maxWidth : @21,
+					#maxHeight : @26,
+					#maxWidth : @26,
 					#ignoredByLayout : false,
-					#previouslyAccessedConstraints : @622,
-					#previouslyAccessedConstraintsType : @12,
+					#previouslyAccessedConstraints : @592,
+					#previouslyAccessedConstraintsType : @17,
 					#accountTransformation : false
 				},
-				#visuals : @55,
+				#visuals : @90,
 				#userData : IdentityDictionary {
 					#enabled : true
 				},
-				#layout : BlLinearLayout {
-					#weightSum : 0,
-					#verticalAlignment : @109,
-					#horizontalAlignment : @110,
-					#orientation : BlLinearLayoutVerticalOrientation {
-						#layout : @627
-					},
-					#shouldUseLargestChild : false,
-					#cellSpacing : 5.0,
-					#interspace : 0.0
-				}
+				#layout : BlFrameLayout { }
 			}
 		],
 		#constraints : BlLayoutCommonConstraints {
 			#vertical : BlLayoutCommonConstraintsAxis {
-				#resizer : @49
+				#resizer : @266
 			},
 			#horizontal : BlLayoutCommonConstraintsAxis {
-				#resizer : @9
+				#resizer : @11
 			},
 			#constraints : {
-				@12 : BlLinearLayoutConstraints {
+				@17 : BlLinearLayoutConstraints {
 					#vertical : BlLinearLayoutConstraintsVertical {
-						#alignment : @15
+						#alignment : @20
 					},
 					#horizontal : BlLinearLayoutConstraintsHorizontal {
-						#alignment : @17
+						#alignment : @22
 					},
 					#weight : 1
 				}
 			},
 			#position : Point [ 0.0, 0.0 ],
-			#margin : @19,
+			#margin : @24,
 			#padding : BlInsets {
 				#top : 10.0,
 				#left : 10.0,
@@ -2468,23 +2086,23 @@ PyramidToploExamples class >> toplo [
 			},
 			#minHeight : 0.0,
 			#minWidth : 0.0,
-			#maxHeight : @21,
-			#maxWidth : @21,
+			#maxHeight : @26,
+			#maxWidth : @26,
 			#ignoredByLayout : false,
-			#previouslyAccessedConstraints : @633,
-			#previouslyAccessedConstraintsType : @12,
+			#previouslyAccessedConstraints : @602,
+			#previouslyAccessedConstraintsType : @17,
 			#accountTransformation : false
 		},
-		#visuals : @55,
+		#visuals : @90,
 		#userData : IdentityDictionary {
 			#enabled : true
 		},
 		#layout : BlLinearLayout {
 			#weightSum : 0,
-			#verticalAlignment : @109,
-			#horizontalAlignment : @110,
+			#verticalAlignment : @51,
+			#horizontalAlignment : @52,
 			#orientation : BlLinearLayoutVerticalOrientation {
-				#layout : @639
+				#layout : @608
 			},
 			#shouldUseLargestChild : false,
 			#cellSpacing : 0.0,
